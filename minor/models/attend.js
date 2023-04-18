@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const { Schema } = mongoose;
-
+// this schema for the attandance 
 const AttendSchema = new Schema({
   user :{
     type:mongoose.Schema.Types.ObjectId,

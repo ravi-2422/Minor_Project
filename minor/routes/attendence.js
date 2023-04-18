@@ -132,7 +132,7 @@ router.get('/attend',fetchuser,async (req,res)=>{
         res.status(500).json({ errors:'server error'})
     }
 })
-
+// testing phase
 // // route  : to save profile photo
 // router.post('/uploadphoto',fetchuser,async (req,res)=>{
     
