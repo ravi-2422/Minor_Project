@@ -27,8 +27,7 @@ router.post("/newcomplain", fetchuser, [
         })
         const new_complain = await newcomplain.save()
         res.json({new_complain:new_complain,response:true})
-        
-    
+            
       }
       catch(error){
         console.log(error)
@@ -41,8 +40,6 @@ router.post("/newcomplain", fetchuser, [
   router.get('/newcomplain',fetchuser,async (req,res)=>{
     try {
         const allcomps = await Complain.find({ user: req.user })
-
-  
         res.json({allcomps:allcomps,history_lenght:allcomps.length,response:true})
     } catch (error) {
       console.log(error)
